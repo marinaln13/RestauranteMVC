@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play&family=Goudy+Bookletter+1911&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Cairo Play", sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e7da;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  font-size: larger;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+.header__imgs {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 25%;
+  height: 35vh;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #f6b58d;
+  box-shadow: 0px 0px 10px 3px #ff914d;
+  position: sticky;
+  height: 7vh;
+  border: 3px solid #ff914d;
+  border-radius: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.nav__item {
+  background-color: #e9e7da;
+  border: 3px solid #0097b2;
+  width: 11%;
+  text-align: center;
+  box-shadow: 0px 0px 10px -3px #0097b2;
+  top: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav__item:hover {
+  transition: all 0.1s ease-in-out;
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  overflow: hidden;
+}
+
+.content {
+  /*background-image: url(../img/mantel.jpg);
+  background-size: cover;*/
+
+  margin-bottom: 10vh;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+.content__title {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  column-gap: 3%;
+  row-gap: 25%;
+  place-content: center center;
+}
+/*
+.cate-dish {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-content: center;
+  justify-content: center;
+}
+
+.dish__name h1 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.dish__name button {
+  align-self: center;
+}
+*/
+.dish1 {
+  border: 3px solid#0097b2;
+  border-radius: 10px;
+  background-color: rgb(245, 234, 234);
+  grid-column: 1 2;
+  box-shadow: 7px 5px 20px #195965;
+}
+.dish2 {
+  border: 3px solid #ff914d;
+  border-radius: 10px;
+  background-color: rgb(245, 234, 234);
+  grid-column: 2 3;
+  box-shadow: 7px 5px 20px #ff914d;
+}
+.dish3 {
+  border: 3px solid #0097b2;
+  border-radius: 10px;
+  background-color: rgb(245, 234, 234);
+  grid-column: 3 4;
+  box-shadow: 7px 5px 20px #195965;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+figure {
+  background-color: #ff914d;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  height: 250px;
+  width: 90%;
+  border: 3px solid #ff914d;
+  border-radius: 10px;
+}
+
+.dib {
+  /*background: url(../img/libre-de-alergenos.png);
+  background-size: cover;*/
+  background-color: #e9e7da;
+  border: none;
+  order: 3;
+}
+
+.dib img {
+  padding: 25px;
+  object-fit: contain;
+}
+
+.categories {
+  margin-top: 50px;
+  margin: 7%;
+  width: 80%;
+}
+
+.categories-item {
+  padding: 20px;
+  border: 3px solid #0097b2;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  background-color: #195965;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 90%;
+  justify-content: center;
+  align-content: center;
+}
+
+footer div {
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer div a {
+  color: #ff914d;
+}
+
+.foot__redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-content: center center;
+  gap: 4%;
+}
+
+.foot__redes :hover {
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.foot__redes div {
+  padding: 0%;
+}
+.foot__redes div a img {
+  width: 30px;
+  height: 30px;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.dish__info {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #e9e7da;
+  width: 30vw;
+  z-index: 1;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+#newW-main {
+  display: flex;
+}
+/*
+.dropdown-categories {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  z-index: 3;
+}
+
+.dropdown-categories a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-categories a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover > #dropdown-categories {
+  display: block !important;
+}
+
+.dropdown-rest {
+  display: none;
+}
+*/

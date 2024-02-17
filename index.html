@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/La Virgñlilla-S.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>La Virgulilla</title>
+  </head>
+  <body>
+    <header class="header" itemscope itemtype="https://schema.org/Restaurant">
+      <div class="header__imgs">
+        <div class="header__logo">
+          <a id="logo" href="#"
+            ><img
+              src="./img/La Virgñlilla.png"
+              class="logo"
+              alt="Logo La Virgulilla"
+              itemprop="logo"
+          /></a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <span class="nav__item"> <a id="init" href="#">~ Inicio ~</a></span>
+        <span class="nav__item"><a href="#" id="nav-menu">~ Menú ~</a></span>
+        <span id="nav-categories" class="nav__item dropdown"
+          ><a href="#" class="dropbtn" id="nav-cate">~ Categorías ~</a>
+          <div class="dropdown-categories" id="dropdown-categories"></div>
+        </span>
+        <span class="nav__item"
+          ><a href="#" id="nav-allergen">~ Alérgenos ~</a></span
+        >
+        <span id="nav-restaurants" class="nav__item"
+          ><a href="#" id="nav-rest">~ Restaurantes ~</a>
+          <div class="dropdown-rest" id="dropdown-rest"></div>
+        </span>
+
+        <span class="nav__item"
+          ><a href="#" id="nav-close">~ Ventanas X ~</a></span
+        >
+      </nav>
+    </header>
+
+    <div class="content" id="content"></div>
+    <main class="dishes" id="dishes"></main>
+    <div class="categories" id="categories"></div>
+
+    <footer class="foot">
+      <div class="foot__info1">
+        <a id="init-foot" href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Reservas</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+
+      <div
+        class="foot__info2"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
+        <a href="#">Mapa Web</a>
+        <a href="#" itemprop="email">lavirgulilla@gmail.com</a>
+        <a href="#" itemprop="telephone">683749012</a>
+        <a href="#" itemprop="location">Puerta de Alcalá, 5</a>
+      </div>
+
+      <div
+        class="foot__redes"
+        itemscope
+        itemtype="https://schema.org/WebApplication"
+      >
+        <div class="instagram">
+          <a href="#" itemprop="URL"
+            ><img
+              src="./img/instagram.png"
+              alt="Logo Instagram"
+              itemprop="image"
+          /></a>
+        </div>
+        <div class="x">
+          <a href="#" itemprop="URL"
+            ><img src="./img/gorjeo.png" alt="Logo X" itemprop="image"
+          /></a>
+        </div>
+        <div class="tiktok">
+          <a href="#" itemprop="URL"
+            ><img src="./img/tik-tok.png" alt="Logo Tiktok" itemprop="image"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/myRestaurant.js"></script>
+  </body>
+</html>
